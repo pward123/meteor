@@ -465,7 +465,7 @@ exports.generateSubsetsOfIncreasingSize = function (total, cb) {
 exports.isUrlWithSha = function (x) {
   // For now, just support http/https, which is at least less restrictive than
   // the old "github only" rule.
-  return /^https?:\/\/.*[0-9a-f]{40}/.test(x);
+  return /^(https|git\+ssh)?:\/\/.*[0-9a-f]{40}/.test(x);
 };
 
 // If there is a version that isn't exact, throws an Error with a
