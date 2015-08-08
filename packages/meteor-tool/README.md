@@ -1,10 +1,10 @@
-# Npm.depends() support for git+sha urls
+# Npm.depends() support for git+ssh urls
 
 Meteor's Npm.depends() currently supports http/https github references. This is good enough for public repositories as well as local private repositories (i.e. github enterprise). However, this doesn't help if you're using standard private github repos.
 
-This version of the meteor tools patches the Npm.depends() function to include support for git+sha npm references.
+This version of the meteor tools patches the Npm.depends() function to include support for git+ssh npm references.
 
-You'll still need to use the full SHA1 tag. This release just adds git+sha based urls in addition to the existing support for http/https.
+You'll still need to use the full SHA1 tag. This release just adds git+ssh based urls in addition to the existing support for http/https.
 
 Example:
 
